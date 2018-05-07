@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    div ul {
+        border: 1px solid blue;
+    }
+
+    div>ul{ /*div的直接下级ul*/
+        border: 1px solid red;
+    }
+
+    div+p { /*  紧贴div后p标签 */
+        background: gray;
+    }
+
+    div~p{ /* div后的所有同级p标签 */
+        border: 5px solid green;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>第一层</li>
+            <li>
+                <ul>
+                    <li>春</li>
+                    <li>夏</li>
+                    <li>秋</li>
+                    <li>冬</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>p1</p>
+    <p>p2</p>
+</body>
+</html>

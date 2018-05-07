@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    div{
+        width: 400px;
+        height: 400px;
+    }
+
+    #china{
+        background: red;
+        position: absolute;
+        top:0px;
+        left:0px;
+        z-index:1;
+    }
+
+    #USA{
+        background: blue;
+        position: absolute;
+        top:50px;
+        left:50px;
+        z-index: 2;
+    }
+
+    #russia {
+        background: green;
+        position: absolute;
+        top:100px;
+        left:100px;
+        z-index: 3;
+    }
+
+    #comm {
+        width: 1000px;
+        height: 500px;
+        background: gray;
+    }
+</style>
+</head>
+<body>
+    <h1>绝对定位</h1>
+    <div id="comm"></div>
+    <div id="china"></div>
+    <div id="USA"></div>
+    <div id="russia"></div>
+</body>
+</html>

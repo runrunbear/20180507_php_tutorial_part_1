@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    #cont {
+        width: 1000px;
+        height: 500px;
+        border: 1px solid red;
+    }
+
+    #test1 {
+        width: 400px;
+        height: 200px;
+        border: 1px solid blue;
+        /*margin: 10px 20px 30px 40px;*/
+        /*margin: 10px 20px 30px;*/
+        margin: 10px 30px;
+        /*margin: 10px;*/
+        float: left;
+    }
+    #test2 {
+        width: 400px;
+        height: 200px;
+        border: 1px solid blue;
+        float: left;
+    }
+    #test3 {
+        width: 800px;
+        height: 200px;
+        border: 1px solid blue;
+        float: left;
+    }
+</style>
+</head>
+<body>
+    <pre>
+        4个margin数字的分配规律:
+        从上边开始,顺时间针分配,没分配到的,取对边的值
+    </pre>
+    <div id="cont">
+        <div id="test1"></div>
+        <div id="test2"></div>
+        <div id="test3"></div>
+    </div>
+</body>
+</html>

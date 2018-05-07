@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    body{
+        background: gray;
+    }
+    #test1 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid blue;
+        /* border-radius: 10px; */
+        border-radius: 10px 20px 30px 40px;
+    }
+
+
+    #test2 {
+        width: 100px;
+        height: 100px;
+        border:1px solid blue;
+        border-radius: 50px;
+    }
+
+    #test3 {
+        width: 100px;
+        height: 50px;
+        border:1px solid blue;
+        border-radius: 50px 50px 0 0;
+    }
+
+    #test4 {
+        width: 100px;
+        height: 100px;
+        border: 100px solid black;
+        background: white;
+        border-radius: 150px;
+    }
+
+    #test5{
+        width: 0px;
+        height: 600px;
+        border-left:300px solid white;
+        border-right:300px solid black;
+        border-radius: 600px;
+    }
+
+    #test5::before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 100px;
+        border: 100px solid white;
+        background: black;
+        border-radius: 100%;
+        margin-left: -150px;
+    }
+
+    #test5::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 100px;
+        border: 100px solid black;
+        background: white;
+        border-radius: 100%;
+        margin-left: -150px;
+    }
+</style>
+</head>
+<body>
+    <div id="test1"></div>
+    <div id="test2"></div>
+    <div id="test3"></div>
+    <div id="test4"></div>
+    <div id="test5"></div>
+</body>
+</html>

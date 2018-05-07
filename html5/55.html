@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        action:URL,提交到哪去
+        method:get/post,提交方式
+        get:参数显示在URL地址栏上
+        post: 不在地址栏显示参数
+    </pre>
+    <form action="http://www.baidu.com" method="post" enctype="multipart/form-data">
+        <p>
+            用户名:
+            <input type="text" name="username">
+        </p>
+        <p>
+            密码:
+            <input type="password" name="pwd">
+        </p>
+        <p>
+            性别:
+            男:<input type="radio" name="gender" value="男">
+            &nbsp;&nbsp;
+            女:<input type="radio" name="gender" value="女">
+        </p>
+        <p>爱好:  <br>
+            篮球: <input type="checkbox" name="hobby" value="basketball"><br>
+            足球: <input type="checkbox" name="hobby" value="footerball"><br>
+            混球: <input type="checkbox" name="hobby" value="hunqiu"><br>
+        </p>
+        <p>
+            学历  <br>
+            <select name="xueli">
+                <option value="docter">博士</option>
+                <option value="da">大学</option>
+                <option value="middle">中学</option>
+                <option value="small">小学</option>
+            </select>
+        </p>
+        <p>
+            个人简介: <br>
+            <textarea name="intro"></textarea>
+        </p>
+        <p>
+            <input type="file" name="pic">
+        </p>
+        <p>
+            <input type="hidden" name="ip" value="192.168.1.100">
+        </p>
+        <p>
+            <input type="submit" value="赶紧提交">
+            <input type="reset" value="恢复原状">
+        </p>
+    </form>
+</body>
+</html>

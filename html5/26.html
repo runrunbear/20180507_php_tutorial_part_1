@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    #test1 , .test2 {
+        width: 200px;
+        height: 100px
+    }
+
+    #test1 {;
+        border: 1px solid blue;
+    }
+
+    .test2 {
+        border: 1px solid green;
+    }
+
+    div{ /*标签选择器,选择所有div标签*/
+        background: gray;
+    }
+
+    p{
+        margin: 3px;
+        border: 1px solid red;
+    }
+
+    div p{ /*div的后代p*/
+        background: orange;
+    }  
+
+</style>
+</head>
+<body>
+    <div id="test1">id test1</div>
+    <div class="test2">class test2</div>
+    <div class="test2">class test2</div>
+    <div class="test2">class test2</div>
+    <div>
+        <pre>
+            <p>div下的p标签</p>
+        </pre>
+    </div>
+    <p>我是body下的p标签</p>
+</body>
+</html>

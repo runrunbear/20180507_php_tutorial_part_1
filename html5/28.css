@@ -1,0 +1,17 @@
+@import url(./28-2.css);
+    div #test1 {
+        color: orange;
+    }
+
+    #test1 {
+        color: purple;
+    }
+    
+    .test2 {
+        color: green;
+    } 
+
+    p{
+        border: 1px solid blue;
+        color:red;
+    }

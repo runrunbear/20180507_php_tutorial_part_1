@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    a{  /*a===a:link*/
+        color: gray;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    a:hover{
+        color: red;
+    }
+    
+    a:active {
+        color: black;
+    }
+
+
+</style>
+</head>
+<body>
+    <pre>
+        类: class
+        .test{}  // 选中class="test"的元素
+
+        伪类: 元素的某个状态
+        a:link 正常的a标签状态
+        a:hover 选中的是 鼠标经过a标签时的状态
+        a:visited 选中的是 鼠标点击后的a标签的状态
+        a:active 选中的是 鼠标点击瞬间的状态
+
+        4个状态不能乱写: l v h a
+    </pre>
+    <div>
+        <a href="dsfa">好</a>
+        <a href="01.html">再好</a>
+    </div>
+</body>
+</html>
